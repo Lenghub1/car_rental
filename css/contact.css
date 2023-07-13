@@ -10,6 +10,10 @@
   }
   .contact-html {
     width: 100%;
+    background-image: url(/images/contact/bg-contact.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
   .contact-html h1 {
     text-align: center;
@@ -107,7 +111,6 @@
     border: 1px solid white;
     border-radius: 3px;
     color: white;
-    background-color: rgb(255, 77, 48);
   }
   .contact-html > .svg-mail-2 .fa-sharp {
     width: 20px;
@@ -117,12 +120,9 @@
     justify-content: center;
     align-items: center;
     padding: 20px 100px;
-    border: 1px solid rgb(255, 77, 48);
-    background-color: rgb(255, 77, 48);
     border-radius: 3px;
     gap: 10px;
     margin: 0 auto;
-    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
     cursor: pointer;
   }
   .svg-mail-2 > .mail-text-2 {
@@ -139,6 +139,10 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    background-image: url(/images/contact/bg-contact.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
   .h1 {
     font-size: 42px;
@@ -207,14 +211,11 @@
     justify-content: center;
     align-items: center;
     padding: 20px 182px;
-    border: 1px solid rgb(255, 77, 48);
-    background-color: rgb(255, 77, 48);
     border-radius: 3px;
     gap: 10px;
     min-width: 300px;
     max-width: 300px;
     margin: 0 auto;
-    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
     cursor: pointer;
   }
   .svg-mail-2 > .mail-text-2 {
@@ -258,10 +259,7 @@
     display: flex;
     justify-content: center;
     width: 1200px !important;
-    gap: 80px;
-    margin: 32px auto;
-
-    background-image: url(https://car-rental-ten.vercel.app/static/media/bg-contact.c178c6db0f988d408d94.png);
+    background-image: url(/images/contact/bg-contact.png);
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: auto;
@@ -339,14 +337,11 @@
     justify-content: center;
     align-items: center;
     padding: 20px 273.5px;
-    /* border: 1px solid red; */
-    background-color: rgb(255, 77, 48);
     border-radius: 3px;
     gap: 10px;
     min-width: 300px;
     max-width: 300px;
     margin: 0 auto;
-    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
     cursor: pointer;
   }
   .svg-mail-2 > .mail-text-2 {
