@@ -5,8 +5,11 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
-/* our colors  */
+/* =========================================  */
+/* this is our reusable component and styles  */
+/* =========================================  */
 
+/* our colors  */
 :root {
   --primary-color: #ff4d30;
   --black-heading: #010103;
@@ -15,6 +18,12 @@
   --light-grey-color: #f8f8f8;
   --roboto: "Roboto", sans-serif;
   --line-height: 1.5;
+  --big-title: 42px;
+  --small-title: 22px;
+  --paragraph: 16px;
+  --weight-big-title: 700;
+  --weight-small-title: 500;
+  --weight-paragraph: normal;
 }
 
 /* reset default styles */
@@ -47,7 +56,7 @@ img {
 
 /* full width for wrapping each sections  */
 .w-full {
-  width: 100vw;
+  width: 100%;
 }
 
 /* margin left and right */
@@ -170,19 +179,19 @@ img {
 /* ======== header and paragraph ============  */
 .small-title {
   color: var(--black-heading);
-  font-size: 22px;
-  font-weight: 500;
+  font-size: var(--small-title);
+  font-weight: var(--weight-small-title);
 }
 
 .big-title {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: var(--big-title);
+  font-weight: var(--weight-big-title);
   color: var(--black-heading);
 }
 
 .paragraph {
   color: var(--gray-paragraph);
-  font-size: 16px;
+  font-size: var(--paragraph);
 }
 
 .text-center {
