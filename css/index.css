@@ -1,0 +1,129 @@
+.sec1-wrapper {
+  max-width: 390px;
+}
+
+#book-form-wrapper {
+  background-image: url(/car-rental-website-anb-prime/images/book-bg.png);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#book-form {
+  padding: 24px 32px;
+}
+
+#selection {
+  border: 1px solid #ccd7e6;
+  padding: 19px 20px;
+  width: 100%;
+}
+
+.btn-search {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.booking-icon {
+  color: #ff4d30;
+}
+
+.sec3-align-text {
+  text-align: center;
+  width: 250px;
+}
+.sec-3-icon {
+  width: 170px;
+  height: 170px;
+}
+
+.sec3-title {
+  text-align: center;
+}
+
+.icon-wrapper {
+  margin-top: 60px;
+}
+
+@media (min-width: 768px) and (max-width: 1123px){
+  .box-form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 18px;
+  }
+  
+  .btn-search{
+    margin-top: 22px;
+  }
+
+  #icon-wrapper-tab{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #main-car {
+  display: none;
+}
+ .main-car{
+  display: none;
+ }
+ .sec1-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+ }
+}
+
+
+@media (min-width: 280px ) and (max-width: 767px){
+  .main-car{
+    display: none;
+  }
+  .sec1-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+ }
+  
+}
+
+
+
+
+@media (min-width: 1123px) {
+   .box-form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 18px;
+    }
+    .btn-search{
+      margin-top: 22px;
+    }
+      #icon-wrapper-tab{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  .sec1-wrapper {
+    display: flex;
+  }
+
+  #content-text {
+    display: flex;
+    align-items: flex-start;
+  }
+  .main-desk p {
+    text-align: start;
+  }
+  .main-desk {
+    max-width: 390px;
+  }
+  .main-desk h2 {
+    text-align: start;
+  
+ }
+}
+
