@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <title>Car Rental Project</title>
+  </head>
+  <body>
+    <!-- PKD 12/Jul/2023 Section 1 Homepage -->
+    <section class="w-full">
+      <div class="flex w-lg w-md w-sm margin-x margin-y gap-32 mobile-gap">
+        <div class="flex flex-col gap-32 sec1-wrapper">
+          <h1 class="small-title">Plan your trip</h1>
+          <h2 class="big-title">Save big with our car rental</h2>
+          <p class="paragraph">
+            Rent the car of your dreams. Unbeatable prices, unlimited miles,
+            flexible pick-up options and much more.
+          </p>
+          <div class="flex gap-32 btn-link btn-col-mobile">
+            <a class="btn btn-primary" href="#"
+              >Book Ride &nbsp;
+              <i class="fa-solid fa-circle-check"></i>
+            </a>
+
+            <a class="btn btn-secondary" href="about.html"
+              >Learn More &nbsp;
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <img class="main-car" src="images/home/main-car.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PKD 13/Jul/2023 Section 2 Homepage -->
+    <section class="w-full">
+      <div
+        class="grid col-1 margin-x margin-y w-lg w-md w-sm"
+        id="book-form-wrapper"
+      >
+        <div class="flex flex-col gap-32" id="book-form">
+          <h1 class="small-title">Book a car</h1>
+          <div class="box-form-wrapper grid col-1 col-3 gap-y-32">
+            <div class="box-form-cartype">
+              <div>
+                <i class="fa-solid fa-car booking-icon"></i>
+                Select Your Car Type <span class="booking-icon">*</span>
+              </div>
+              <div>
+                <label for="selection">
+                  <select class="paragraph" name="selection" id="selection">
+                    <option>Select your car type</option>
+                    <option value="car">Audi S1 S-line</option>
+                    <option value="car">VW Golf 6</option>
+                    <option value="car">Toyota Camry</option>
+                    <option value="car">BMW 320 Modernline</option>
+                    <option value="car">Mercedes-Benz GLK</option>
+                    <option value="car">VW Passat CC</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="box-form-cartype">
+              <div>
+                <i class="fa-solid fa-location-dot booking-icon"></i>
+                Pick-up<span class="booking-icon">*</span>
+              </div>
+              <div>
+                <label for="selection">
+                  <select class="paragraph" name="selection" id="selection">
+                    <option>Select pick up location</option>
+                    <option value="car">Audi S1 S-line</option>
+                    <option value="car">VW Golf 6</option>
+                    <option value="car">Toyota Camry</option>
+                    <option value="car">BMW 320 Modernline</option>
+                    <option value="car">Mercedes-Benz GLK</option>
+                    <option value="car">VW Passat CC</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="box-form-cartype">
+              <div>
+                <i class="fa-solid fa-location-dot booking-icon"></i>
+                Drop-of <span class="booking-icon">*</span>
+              </div>
+              <div>
+                <label for="selection">
+                  <select class="paragraph" name="selection" id="selection">
+                    <option>Select drop of location</option>
+                    <option value="car">Audi S1 S-line</option>
+                    <option value="car">VW Golf 6</option>
+                    <option value="car">Toyota Camry</option>
+                    <option value="car">BMW 320 Modernline</option>
+                    <option value="car">Mercedes-Benz GLK</option>
+                    <option value="car">VW Passat CC</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="box-form-cartype">
+              <div>
+                <i class="fa-sharp fa-solid fa-calendar-days booking-icon"></i>
+                Pick-up Date <span class="booking-icon">*</span>
+              </div>
+              <div>
+                <label for="date">
+                  <input
+                    class="paragraph"
+                    id="selection"
+                    type="date"
+                    placeholder=""
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="box-form-cartype">
+              <div>
+                <i class="fa-sharp fa-solid fa-calendar-days booking-icon"></i>
+                Drop-of Date <span class="booking-icon">*</span>
+              </div>
+              <div>
+                <label for="date">
+                  <input
+                    class="paragraph"
+                    id="selection"
+                    type="date"
+                    placeholder=""
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="box-form-cartype">
+              <div>
+                <button id="selection" class="btn-primary btn-search">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PKD 13/Jul/2023 Section 2 Homepage -->
+    <section class="w-full w-lg w-md w-sm margin-x margin-y">
+      <div>
+        <div class="flex flex-col align-center gap-32">
+          <h1 class="small-title">Plan your trip</h1>
+          <h2 class="big-title sec3-title">Quick & easy car rental</h2>
+        </div>
+
+        <div class="icon-wrapper flex flex-col gap-32" id="icon-wrapper-tab">
+          <div
+            class="flex flex-col align-center sec3-align-text margin-x gap-12"
+          >
+            <img class="sec-3-icon" src="images/icon1.png" alt="car icon" />
+            <h2 class="small-title">Select Car</h2>
+            <p class="paragraph">
+              We offers a big range of vehicles for all your driving needs. We
+              have the perfect car to meet your needs
+            </p>
+          </div>
+          <div
+            class="flex flex-col align-center sec3-align-text margin-x gap-12"
+          >
+            <img class="sec-3-icon" src="images/icon2.png" alt="car icon" />
+            <h2 class="small-title">Contact Operator</h2>
+            <p class="paragraph">
+              Our knowledgeable and friendly operators are always ready to help
+              with any questions or concerns
+            </p>
+          </div>
+          <div
+            class="flex flex-col align-center sec3-align-text margin-x gap-12"
+          >
+            <img class="sec-3-icon" src="images/icon3.png" alt="car icon" />
+            <h2 class="small-title">Let's Drive</h2>
+            <p class="paragraph">
+              Whether you're hitting the open road, we've got you covered with
+              our wide range of cars
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
