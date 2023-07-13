@@ -46,67 +46,77 @@
   margin-top: 60px;
 }
 
-@media (min-width: 768px) and (max-width: 1123px){
+@media (min-width: 768px) and (max-width: 1123px) {
   .box-form-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 32px;
     row-gap: 18px;
   }
-  
-  .btn-search{
+
+  .btn-search {
     margin-top: 22px;
   }
 
-  #icon-wrapper-tab{
+  #icon-wrapper-tab {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   #main-car {
-  display: none;
-}
- .main-car{
-  display: none;
- }
- .sec1-wrapper{
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  text-align: center;
- }
-}
-
-
-@media (min-width: 280px ) and (max-width: 767px){
-  .main-car{
     display: none;
   }
-  .sec1-wrapper{
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  text-align: center;
- }
-  
+  .main-car {
+    display: none;
+  }
+  .sec1-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
+@media (min-width: 280px) and (max-width: 767px) {
+  .main-car {
+    display: none;
+  }
+  .sec1-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .btn-col-mobile {
+    display: flex;
+    flex-direction: column;
+  }
 
-
+  .mobile-gap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 
 @media (min-width: 1123px) {
-   .box-form-wrapper {
+  .box-form-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 32px;
     row-gap: 18px;
-    }
-    .btn-search{
-      margin-top: 22px;
-    }
-      #icon-wrapper-tab{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
+  }
+  .btn-search {
+    margin-top: 22px;
+  }
+  #icon-wrapper-tab {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .sec1-wrapper {
     display: flex;
   }
@@ -123,7 +133,5 @@
   }
   .main-desk h2 {
     text-align: start;
-  
- }
+  }
 }
-
