@@ -10,6 +10,10 @@
   }
   .contact-html {
     width: 100%;
+    background-image: url(/images/contact/bg-contact.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
   .contact-html h1 {
     text-align: center;
@@ -139,6 +143,10 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    background-image: url(/images/contact/bg-contact.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
   .h1 {
     font-size: 42px;
@@ -261,7 +269,7 @@
     gap: 80px;
     margin: 32px auto;
 
-    background-image: url(https://car-rental-ten.vercel.app/static/media/bg-contact.c178c6db0f988d408d94.png);
+    background-image: url(/images/contact/bg-contact.png);
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: auto;
