@@ -266,9 +266,6 @@
     display: flex;
     justify-content: center;
     width: 1200px !important;
-    gap: 80px;
-    margin: 32px auto;
-
     background-image: url(/images/contact/bg-contact.png);
     background-position: 100%;
     background-repeat: no-repeat;
