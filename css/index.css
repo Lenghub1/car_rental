@@ -487,3 +487,149 @@
     max-width: 550px;
   }
 }
+
+/*========================== FAQ ===========================*/
+#faq-section {
+  background-image: url(/images/cars/car-faq.png);
+  background-repeat: no-repeat;
+  background-position: 0 90%;
+}
+
+.faq-box {
+  margin-top: 4rem;
+  box-shadow: 0px 0px 15px #0000001a;
+  line-height: 1.5rem;
+  background-color: #fff;
+}
+
+.faq-item:nth-of-type(2) {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.faq-question {
+  padding: 1rem 1.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 300ms, color 300ms;
+}
+
+.faq-question:hover {
+  cursor: pointer;
+}
+
+.faq-question.active-q {
+  background-color: var(--primary-color);
+  color: var(--light-grey-color);
+  box-shadow: 0px 7px 15px #ff533059;
+}
+
+.faq-question span {
+  max-width: 12rem;
+}
+
+.faq-question i {
+  transition: transform 300ms;
+}
+
+.faq-question i.active-i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  color: var(--gray-paragraph);
+  max-height: 0;
+  padding: 0 1.5rem;
+  overflow: hidden;
+  transition: max-height 300ms, padding 300ms;
+}
+.faq-answer.active-ans {
+  padding: 1.5rem;
+  max-height: 40rem;
+}
+
+/*======================= Download section ===================*/
+#dl-section {
+  background-color: var(--light-grey-color);
+  padding: 84px 0;
+}
+
+.dl-btns {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dl-btns a {
+  max-width: 12rem;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dl-btns a:hover {
+  opacity: 0.7;
+  transform: scale(1.01);
+}
+
+/*===================== FAQ-DL big phone ================*/
+@media (min-width: 450px) {
+  /* ===FAQ=== */
+  .faq-question {
+    gap: 1rem;
+  }
+  .faq-question span {
+    max-width: none;
+  }
+
+  .faq-answer.active-ans {
+    max-height: 30rem;
+  }
+}
+
+/* ======================== FAQ-DL Tablet======================== */
+@media (min-width: 768px) {
+  /* ===FAQ=== */
+  #faq-txt-wrapper {
+    max-width: 800px;
+  }
+
+  .faq-answer.active-ans {
+    max-height: 15rem;
+  }
+
+  /* ===Download=== */
+  #dl-section {
+    background-image: url(/images/bg-phone.png);
+    background-position: top;
+    background-size: cover;
+  }
+
+  #dl-txt-wrapper {
+    max-width: 64%;
+    text-align: left;
+  }
+
+  .dl-btns {
+    flex-direction: row;
+  }
+}
+
+/* ===========================FAQ-DL Laptop======================== */
+@media (min-width: 1024px) {
+  /* ===FAQ=== */
+  .faq-box {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ===DL=== */
+  #dl-txt-wrapper {
+    max-width: 620px;
+    text-align: left;
+  }
+}
