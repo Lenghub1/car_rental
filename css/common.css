@@ -126,7 +126,7 @@ img {
 
 /* flexbox  */
 .flex {
-  display: flex;
+  display: flex !important;
 }
 
 /* justify between  */
@@ -220,7 +220,8 @@ img {
 /* on meduim screen 1349 down  */
 @media (max-width: 1349px) {
   .w-md {
-    width: 850px;
+    /* width: 850px; */
+    width: 960px;
   }
 
   .col-2 {
