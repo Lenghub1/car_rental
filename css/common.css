@@ -126,7 +126,7 @@ img {
 
 /* flexbox  */
 .flex {
-  display: flex !important;
+  display: flex;
 }
 
 /* justify between  */
