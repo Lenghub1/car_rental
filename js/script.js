@@ -1,4 +1,13 @@
 window.onload = () => {
+  // Input your js code here.
+  // navbar button
+  let btnToggle = document.querySelectorAll(".btn--for-navbar");
+  let mobile_nav = document.querySelector(".mobile--navbar");
+  for (let allBtn of btnToggle) {
+    allBtn.addEventListener("click", () => {
+      mobile_nav.classList.toggle("active");
+    });
+  }
   // FAQ js
   const faqItems = document.querySelectorAll(".faq-item");
 
