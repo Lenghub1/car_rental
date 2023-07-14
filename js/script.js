@@ -1,5 +1,31 @@
 window.onload = () => {
-  // Input your js code here.
+  // FAQ js
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  for (let eachFaq of faqItems) {
+    const question = eachFaq.querySelector(".faq-question");
+    const answer = eachFaq.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+      closeAllFaq(eachFaq.id);
+      question.classList.toggle("active-q");
+      question.querySelector("i").classList.toggle("active-i");
+      answer.classList.toggle("active-ans");
+    });
+  }
+
+  function closeAllFaq(exceptID) {
+    for (let eachFaq of faqItems) {
+      const question = eachFaq.querySelector(".faq-question");
+      const answer = eachFaq.querySelector(".faq-answer");
+
+      if (eachFaq.id !== exceptID) {
+        question.classList.remove("active-q");
+        question.querySelector("i").classList.remove("active-i");
+        answer.classList.remove("active-ans");
+      }
+    }
+  }
 };
 var images = Array.from(
   document.getElementById("img-group").getElementsByTagName("img")
