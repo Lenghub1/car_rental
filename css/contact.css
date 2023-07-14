@@ -17,21 +17,14 @@
   }
   .contact-html h1 {
     text-align: center;
-    font-size: 42px;
     margin: 12px auto;
-    width: 300px;
     padding: 12px;
   }
   .contact-html .left-side-text {
-    color: gray;
     text-align: center;
     width: 300px;
     margin: 0 auto;
   }
-
-  /* .svg-Phone .fa-phone {
-      width: 9px;
-    } */
   .phone-number {
     display: inline-block;
     font-weight: bold;
@@ -145,15 +138,10 @@
     background-size: auto;
   }
   .h1 {
-    font-size: 42px;
-    font-weight: 700;
-    /* width: 500px; */
     max-width: 70%;
   }
   .left-side-text {
     padding-top: 30px;
-    color: gray;
-    /* width: 400px; */
     font-size: 16px;
     max-width: 70%;
   }
@@ -273,16 +261,8 @@
   .eg-joe::-webkit-input-placeholder {
     text-align: center;
   }
-  .h1 {
-    font-size: 50px;
-    font-weight: 700;
-    /* width: 500px; */
-    max-width: 70%;
-  }
   .left-side-text {
     padding-top: 30px;
-    color: gray;
-    /* width: 450px; */
     font-size: 20px;
     max-width: 70%;
   }
