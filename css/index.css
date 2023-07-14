@@ -3,7 +3,7 @@
 }
 
 #book-form-wrapper {
-  background-image: url(/car-rental-website-anb-prime/images/book-bg.png);
+  background-image: url(/images/book-bg.png);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 }
 
 .booking-icon {
-  color: #ff4d30;
+  color: var(--primary-color);
 }
 
 .sec3-align-text {
@@ -46,7 +46,21 @@
   margin-top: 60px;
 }
 
-@media (min-width: 768px) and (max-width: 1123px) {
+#learn-more-btn {
+  transition: all 0.3s ease-in-out;
+  border: 2px solid var(--black-heading);
+}
+
+#learn-more-btn:hover {
+  background-color: var(--light-grey-color);
+  color: #010103;
+}
+
+#big-span {
+  color: var(--primary-color);
+}
+
+@media (min-width: 720px) and (max-width: 1349px) {
   .box-form-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -76,7 +90,7 @@
   }
 }
 
-@media (min-width: 280px) and (max-width: 767px) {
+@media (min-width: 280px) and (max-width: 719px) {
   .main-car {
     display: none;
   }
@@ -98,15 +112,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
     text-align: center;
   }
 }
 
-@media (min-width: 1123px) {
+@media (min-width: 1350px) {
   .box-form-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 32px;
     row-gap: 18px;
   }
@@ -134,7 +147,11 @@
   .main-desk h2 {
     text-align: start;
   }
+  .main-car {
+    width: 85%;
+  }
 }
+
 /* lengcss */
 .pick-section {
   padding: 10rem 0;
@@ -144,7 +161,7 @@
   flex-direction: column;
 }
 .pick-container_title {
-  color: black;
+  color: var(--black-heading);
   margin: 0 auto 50px;
   max-width: 500px;
 }
@@ -485,5 +502,151 @@
   .all-testimonials-box {
     padding: 55px;
     max-width: 550px;
+  }
+}
+
+/*========================== FAQ ===========================*/
+#faq-section {
+  background-image: url(/images/cars/car-faq.png);
+  background-repeat: no-repeat;
+  background-position: 0 90%;
+}
+
+.faq-box {
+  margin-top: 4rem;
+  box-shadow: 0px 0px 15px #0000001a;
+  line-height: 1.5rem;
+  background-color: #fff;
+}
+
+.faq-item:nth-of-type(2) {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.faq-question {
+  padding: 1rem 1.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 300ms, color 300ms;
+}
+
+.faq-question:hover {
+  cursor: pointer;
+}
+
+.faq-question.active-q {
+  background-color: var(--primary-color);
+  color: var(--light-grey-color);
+  box-shadow: 0px 7px 15px #ff533059;
+}
+
+.faq-question span {
+  max-width: 12rem;
+}
+
+.faq-question i {
+  transition: transform 300ms;
+}
+
+.faq-question i.active-i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  color: var(--gray-paragraph);
+  max-height: 0;
+  padding: 0 1.5rem;
+  overflow: hidden;
+  transition: max-height 300ms, padding 300ms;
+}
+.faq-answer.active-ans {
+  padding: 1.5rem;
+  max-height: 40rem;
+}
+
+/*======================= Download section ===================*/
+#dl-section {
+  background-color: var(--light-grey-color);
+  padding: 84px 0;
+}
+
+.dl-btns {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dl-btns a {
+  max-width: 12rem;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dl-btns a:hover {
+  opacity: 0.7;
+  transform: scale(1.01);
+}
+
+/*===================== FAQ-DL big phone ================*/
+@media (min-width: 450px) {
+  /* ===FAQ=== */
+  .faq-question {
+    gap: 1rem;
+  }
+  .faq-question span {
+    max-width: none;
+  }
+
+  .faq-answer.active-ans {
+    max-height: 30rem;
+  }
+}
+
+/* ======================== FAQ-DL Tablet======================== */
+@media (min-width: 768px) {
+  /* ===FAQ=== */
+  #faq-txt-wrapper {
+    max-width: 800px;
+  }
+
+  .faq-answer.active-ans {
+    max-height: 15rem;
+  }
+
+  /* ===Download=== */
+  #dl-section {
+    background-image: url(/images/bg-phone.png);
+    background-position: top;
+    background-size: cover;
+  }
+
+  #dl-txt-wrapper {
+    max-width: 64%;
+    text-align: left;
+  }
+
+  .dl-btns {
+    flex-direction: row;
+  }
+}
+
+/* ===========================FAQ-DL Laptop======================== */
+@media (min-width: 1024px) {
+  /* ===FAQ=== */
+  .faq-box {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ===DL=== */
+  #dl-txt-wrapper {
+    max-width: 620px;
+    text-align: left;
   }
 }

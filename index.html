@@ -13,18 +13,21 @@
       <div class="flex w-lg w-md w-sm margin-x margin-y gap-32 mobile-gap">
         <div class="flex flex-col gap-32 sec1-wrapper">
           <h1 class="small-title">Plan your trip</h1>
-          <h2 class="big-title">Save big with our car rental</h2>
+          <h2 class="big-title">
+            Save <span class="big-title" id="big-span">big</span> with our car
+            rental
+          </h2>
           <p class="paragraph">
             Rent the car of your dreams. Unbeatable prices, unlimited miles,
             flexible pick-up options and much more.
           </p>
           <div class="flex gap-32 btn-link btn-col-mobile">
-            <a class="btn btn-primary" href="#"
+            <a class="btn btn-primary shadow-hover" href="#"
               >Book Ride &nbsp;
               <i class="fa-solid fa-circle-check"></i>
             </a>
 
-            <a class="btn btn-secondary" href="about.html"
+            <a class="btn btn-secondary" id="learn-more-btn" href="about.html"
               >Learn More &nbsp;
               <i class="fa-solid fa-angle-right"></i>
             </a>
@@ -136,7 +139,10 @@
             </div>
             <div class="box-form-cartype">
               <div>
-                <button id="selection" class="btn-primary btn-search">
+                <button
+                  id="selection"
+                  class="btn-primary btn-search shadow-hover"
+                >
                   Search
                 </button>
               </div>
@@ -146,7 +152,7 @@
       </div>
     </section>
 
-    <!-- PKD 13/Jul/2023 Section 2 Homepage -->
+    <!-- PKD 13/Jul/2023 Section 3 Homepage -->
     <section class="w-full w-lg w-md w-sm margin-x margin-y">
       <div>
         <div class="flex flex-col align-center gap-32">
@@ -671,6 +677,92 @@
         </div>
       </div>
     </section>
+
+    <!-- FAQ section -->
+    <section id="faq-section" class="w-full">
+      <div class="w-sm w-md w-lg margin-y">
+        <header
+          id="faq-txt-wrapper"
+          class="text-center flex flex-col gap-y-12 margin-x"
+        >
+          <div class="small-title">FAQ</div>
+          <div class="big-title">Frequently Asked Questions</div>
+          <p class="paragraph">
+            Frequently Asked Questions About the Car Rental Booking Process on
+            Our Website: Answers to Common Concerns and Inquiries.
+          </p>
+        </header>
+
+        <div class="faq-box">
+          <div id="faq-one" class="faq-item">
+            <div class="faq-question active-q">
+              <span>1. What is special about comparing rental car deals?</span>
+              <i class="fa-solid fa-angle-down active-i"></i>
+            </div>
+            <div class="faq-answer active-ans">
+              Comparing rental car deals is important as it helps find the best
+              deal that fits your budget and requirements, ensuring you get the
+              most value for your money. By comparing various options, you can
+              find deals that offer lower prices, additional services, or better
+              car models. You can find car rental deals by researching online
+              and comparing prices from different rental companies.
+            </div>
+          </div>
+          <div id="faq-two" class="faq-item">
+            <div class="faq-question">
+              <span>2. How do I find the car rental deals?</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="faq-answer">
+              You can find car rental deals by researching online and comparing
+              prices from different rental companies. Websites such as Expedia,
+              Kayak, and Travelocity allow you to compare prices and view
+              available rental options. It is also recommended to sign up for
+              email newsletters and follow rental car companies on social media
+              to be informed of any special deals or promotions.
+            </div>
+          </div>
+          <div id="faq-three" class="faq-item">
+            <div class="faq-question">
+              <span>3. How do I find such low rental car prices?</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="faq-answer">
+              Book in advance: Booking your rental car ahead of time can often
+              result in lower prices. Compare prices from multiple companies:
+              Use websites like Kayak, Expedia, or Travelocity to compare prices
+              from multiple rental car companies. Look for discount codes and
+              coupons: Search for discount codes and coupons that you can use to
+              lower the rental price. Renting from an off-airport location can
+              sometimes result in lower prices.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download section -->
+    <section id="dl-section" class="w-full">
+      <div class="w-sm w-md w-lg margin-x">
+        <header id="dl-txt-wrapper" class="text-center">
+          <div class="big-title">Download our app to get most out of it</div>
+          <p class="paragraph">
+            Thrown shy denote ten ladies though ask saw. Or by to he going think
+            order event music. Incommode so intention defective at convinced.
+            Led income months itself and houses you.
+          </p>
+        </header>
+        <div class="dl-btns">
+          <a href="https://play.google.com" target="_blank">
+            <img src="images/buttons/playstore-btn.svg" alt="" />
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank">
+            <img src="images/buttons/appstore-btn.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
     <script src="/js/script.js"></script>
   </body>
 </html>
