@@ -243,10 +243,8 @@
     margin: auto;
   }
   .contact-html {
-    width: 2500px;
     display: flex;
     justify-content: center;
-    width: 1200px !important;
     background-image: url(/images/contact/bg-contact.png);
     background-position: 100%;
     background-repeat: no-repeat;
