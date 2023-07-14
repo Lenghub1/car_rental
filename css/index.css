@@ -3,7 +3,7 @@
 }
 
 #book-form-wrapper {
-  background-image: url(/car-rental-website-anb-prime/images/book-bg.png);
+  background-image: url(/images/book-bg.png);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 }
 
 .booking-icon {
-  color: #ff4d30;
+  color: var(--primary-color);
 }
 
 .sec3-align-text {
@@ -46,7 +46,21 @@
   margin-top: 60px;
 }
 
-@media (min-width: 768px) and (max-width: 1123px) {
+#learn-more-btn {
+  transition: all 0.3s ease-in-out;
+  border: 2px solid var(--black-heading);
+}
+
+#learn-more-btn:hover {
+  background-color: var(--light-grey-color);
+  color: #010103;
+}
+
+#big-span {
+  color: var(--primary-color);
+}
+
+@media (min-width: 720px) and (max-width: 1349px) {
   .box-form-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -76,7 +90,7 @@
   }
 }
 
-@media (min-width: 280px) and (max-width: 767px) {
+@media (min-width: 280px) and (max-width: 719px) {
   .main-car {
     display: none;
   }
@@ -98,15 +112,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
     text-align: center;
   }
 }
 
-@media (min-width: 1123px) {
+@media (min-width: 1350px) {
   .box-form-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 32px;
     row-gap: 18px;
   }
@@ -134,7 +147,11 @@
   .main-desk h2 {
     text-align: start;
   }
+  .main-car {
+    width: 85%;
+  }
 }
+
 /* lengcss */
 .pick-section {
   padding: 10rem 0;
@@ -144,7 +161,7 @@
   flex-direction: column;
 }
 .pick-container_title {
-  color: black;
+  color: var(--black-heading);
   margin: 0 auto 50px;
   max-width: 500px;
 }
