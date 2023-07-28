@@ -3,7 +3,7 @@
 - Indentation: 2 spaces
 - Naming rules: use lowercase with dash (-) NOT space
 - Character Encoding: UTF-8
-- Fonts: Roboto (100, 400, 500, 700)
+- Fonts: Roboto (400, 500, 700)
 - Colors:
   - Primary Color: #ff4d30
   - Black Heading: #010103
@@ -15,7 +15,7 @@
 
 # Project folder structure
 
-Project name: car-rental-website-anb-prime
+Project name: **_car-rental-website-anb-prime_**
 
 ```
 |--- css
@@ -45,9 +45,45 @@ Project name: car-rental-website-anb-prime
 
 ```
 
+# Must Follow:
+
+## 1. Link CSS
+
+Every html file must link common.css.  
+Example: index.html
+
+```html
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/index.css" />
+```
+
+## 2. Container width
+
+Every element that is right below `<body>` element must have these classes:
+
+- `.w-full` on parent element - the one right below `<body>`
+- `.w-lg`, `.w-md`, `.w-sm` on child element.
+
+## 3. Margin of each section
+
+Every element that is right under `<body>` element must have these margin classes:
+
+- `.margin-x` = to center the element
+- `.margin-y` = to add margin on top and bottom of the element.
+
+Example:
+
+```html
+<body>
+  <section class="w-full margin-x margin-y">
+    <div class="w-lg w-md w-sm"></div>
+  </section>
+</body>
+```
+
 # Buttons:
 
-## 1. Normal red button
+## 1. Primary button
 
 ### 1.1. Overview
 
@@ -55,14 +91,16 @@ Normal red button has only red color and text
 
 ### 1.2. How to use
 
-- Class name: `.red-btn`
+- Class names:
 
-### 1.3. Characteristics
+  - `.btn`
+  - `.btn-primary` for primary red button
+  - `.btn-secondary` for secondary black button
 
-- Background Color code: #ff4d40
-- Text color: #fff
-- Font size: 18px
-- Font weight: 500
+- Example:
+  ```html
+  <button class="btn btn-primary">Click me</button>
+  ```
 
 ## 2. Button with icon
 
@@ -72,12 +110,10 @@ Buttons with icon can have icon on the left or right side of it
 
 ### 2.2. How to use
 
-- Example:  
-  `<button class="red-btn">Learn more <i>...</i></button>`
-
-### 2.3. Characteristics
-
-- See "Normal red button"
+- Example:
+  ```html
+  <button class="btn btn-primary">Click me <i>...</i></button>
+  ```
 
 # Typography:
 
@@ -135,15 +171,43 @@ Paragraph is mostly placed under big titles.
 
 # Grid System
 
-# Layout
+## 1. Class names
 
-- Max width: 1330px
-- Width: 90% of viewport width
+- `.grid`
+- `.col-3`, `.col-2`, `.col-1`
+- `.place-center`
+- `.gap-x-12` = gap left and right 12px
+- `.gap-y-12` = gap top and bottom 12px
+- `.gap-12` = gap 12px
+- `.gap-x-32` = gap left and right 32px
+- `.gap-y-32` = gap top and bottom 32px
+- `.gap-32` = gap 32px
 
-# Navbar
+## 2. How to use
 
-# Footer
+```html
+<div class="grid col-1 col-2 col-3">
+  <div>...</div>
+  <div>...</div>
+  <div>...</div>
+</div>
+```
 
-# Plan you trip section
+# Flex
 
-# Testimonial section
+## 1. Class names
+
+- `.flex`
+- `.justify-center`
+- `.align-center`
+- `.flex-col` = flex direction column
+
+## 2. How to use
+
+```html
+<div class="flex gap-12">
+  <div>...</div>
+  <div>...</div>
+  <div>...</div>
+</div>
+```
